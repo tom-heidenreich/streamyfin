@@ -12,13 +12,18 @@
       "resizeMode": "contain"
     },
     "jsEngine": "hermes",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "requireFullScreen": true,
       "infoPlist": {
         "NSCameraUsageDescription": "The app needs access to your camera to scan barcodes.",
         "NSMicrophoneUsageDescription": "The app needs access to your microphone.",
-        "UIBackgroundModes": ["audio", "fetch"],
+        "UIBackgroundModes": [
+          "audio",
+          "fetch"
+        ],
         "NSLocalNetworkUsageDescription": "The app needs access to your local network to connect to your Jellyfin server.",
         "NSAppTransportSecurity": {
           "NSAllowsArbitraryLoads": true
@@ -39,7 +44,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive_icon.png"
       },
-      "package": "com.tomheidenreich.streamyfin-experimental",
+      "package": "com.tomheidenreich.streamyfinexperimental",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
@@ -110,7 +115,11 @@
       "expo-asset",
       [
         "react-native-edge-to-edge",
-        { "android": { "parentTheme": "Material3" } }
+        {
+          "android": {
+            "parentTheme": "Material3"
+          }
+        }
       ],
       ["react-native-bottom-tabs"],
       ["./plugins/withChangeNativeAndroidTextToWhite.js"],
@@ -125,7 +134,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "e9d5440f-3b89-445b-b42a-eef3acbcbbcb"
+        "projectId": "80c3a6ec-beca-4977-b9c7-ddae0d2e1d18"
       }
     },
     "owner": "tom-heidenreich",
