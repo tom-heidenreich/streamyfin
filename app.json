@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Streamyfin",
-    "slug": "streamyfin",
+    "name": "Streamyfin (Experimental)",
+    "slug": "streamyfin-experimental",
     "version": "0.25.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
@@ -32,7 +32,7 @@
         "usesNonExemptEncryption": false
       },
       "supportsTablet": true,
-      "bundleIdentifier": "com.fredrikburmester.streamyfin"
+      "bundleIdentifier": "com.tomheidenreich.streamyfin-experimental"
     },
     "android": {
       "jsEngine": "hermes",
@@ -40,7 +40,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive_icon.png"
       },
-      "package": "com.fredrikburmester.streamyfin",
+      "package": "com.tomheidenreich.streamyfin-experimental",
       "permissions": [
         "android.permission.FOREGROUND_SERVICE",
         "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK",
@@ -124,15 +124,15 @@
         "origin": false
       },
       "eas": {
-        "projectId": "e79219d1-797f-4fbe-9fa1-cfd360690a68"
+        "projectId": "e9d5440f-3b89-445b-b42a-eef3acbcbbcb"
       }
     },
-    "owner": "fredrikburmester",
+    "owner": "tom-heidenreich",
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/e79219d1-797f-4fbe-9fa1-cfd360690a68"
+      "url": "https://u.expo.dev/e9d5440f-3b89-445b-b42a-eef3acbcbbcb"
     }
   }
 }
