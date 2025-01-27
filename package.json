@@ -10,6 +10,7 @@
     "android": "bun run submodule-reload && expo run:android",
     "ios": "bun run submodule-reload && expo run:ios",
     "web": "bun run submodule-reload && expo start --web",
+    "build:android": "bun run submodule-reload && eas build -p android --profile production-apk --local",
     "lint": "expo lint",
     "postinstall": "patch-package"
   },
