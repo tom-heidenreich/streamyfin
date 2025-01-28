@@ -8,7 +8,10 @@ import {
 } from "@/providers/JellyfinProvider";
 import { JobQueueProvider } from "@/providers/JobQueueProvider";
 import { PlaySettingsProvider } from "@/providers/PlaySettingsProvider";
-import { SplashScreenProvider, useSplashScreenLoading } from "@/providers/SplashScreenProvider";
+import {
+  SplashScreenProvider,
+  useSplashScreenLoading,
+} from "@/providers/SplashScreenProvider";
 import { WebSocketProvider } from "@/providers/WebSocketProvider";
 import { orientationAtom } from "@/utils/atoms/orientation";
 import { Settings, useSettings } from "@/utils/atoms/settings";
@@ -224,6 +227,15 @@ export default function RootLayout() {
   );
 }
 
+import * as Sentry from "@sentry/react-native";
+
+Sentry.init({
+  dsn: "https://af11ec4433dd66b8bae5b475d78817ba@o4508721753751552.ingest.de.sentry.io/4508721777016912",
+  debug: false,
+});
+
+Sentry.wrap(RootLayout);
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -310,7 +322,7 @@ function Layout() {
   });
 
   // show splash screen until everything loaded
-  useSplashScreenLoading(!loaded)
+  useSplashScreenLoading(!loaded);
 
   if (!loaded) {
     return null;
