@@ -12,18 +12,13 @@
       "resizeMode": "contain"
     },
     "jsEngine": "hermes",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "requireFullScreen": true,
       "infoPlist": {
         "NSCameraUsageDescription": "The app needs access to your camera to scan barcodes.",
         "NSMicrophoneUsageDescription": "The app needs access to your microphone.",
-        "UIBackgroundModes": [
-          "audio",
-          "fetch"
-        ],
+        "UIBackgroundModes": ["audio", "fetch"],
         "NSLocalNetworkUsageDescription": "The app needs access to your local network to connect to your Jellyfin server.",
         "NSAppTransportSecurity": {
           "NSAllowsArbitraryLoads": true
@@ -124,7 +119,15 @@
       ["react-native-bottom-tabs"],
       ["./plugins/withChangeNativeAndroidTextToWhite.js"],
       ["./plugins/withGoogleCastActivity.js"],
-      ["./plugins/withTrustLocalCerts.js"]
+      ["./plugins/withTrustLocalCerts.js"],
+      [
+        "@sentry/react-native/expo",
+        {
+          "organization": "tom-heidenreich",
+          "project": "streamyfin",
+          "url": "https://sentry.io/"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
