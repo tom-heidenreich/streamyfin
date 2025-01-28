@@ -38,3 +38,5 @@ credentials.json
 .vscode/
 .idea/
 .ruby-lsp
+
+.env
